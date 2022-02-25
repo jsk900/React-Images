@@ -5,7 +5,12 @@ const RequireFromDataFile = () => {
     <img key={pic.id} src={pic.img} alt='' />
   ));
 
-  return <section>{imageList}</section>;
+  return (
+    <>
+      <h1>Requires from data file pointing at the src/pics folder</h1>
+      <section>{imageList}</section>
+    </>
+  );
 };
 
 export default RequireFromDataFile;
